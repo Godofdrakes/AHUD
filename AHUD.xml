@@ -10,17 +10,19 @@ xsi:schemaLocation="http://www.red5studios.com/ ../../../schemas/component.xsd">
 		uiVersion="1000"
 	/>
 	<Events>
+		<Event name="ASTAT_SAVED"				bind="AstatSaved"/>
 		<Event name="ON_COMPONENT_LOAD"			bind="OnComponentLoad"/>
 		<Event name="ON_PLAYER_READY"			bind="OnPlayerReady"/>
+
 		<Event name="ON_WEAPON_BURST"			bind="LoadHUD"/>
 		<Event name="ON_WEAPON_CHANGED"			bind="LoadHUD"/>
 		<Event name="ON_WEAPON_RELOAD"			bind="LoadHUD"/>
 		<Event name="ON_HEALTH_CHANGED"			bind="LoadHUD"/>
 		<Event name="ON_TOOK_HIT"				bind="LoadHUD"/>
 		<Event name="ON_ENERGY_CHANGED"			bind="LoadHUD"/>
-		<Event name="ASTAT_SAVED"				bind="AstatSaved"/>
+
 		<Event name="ON_BATTLEFRAME_CHANGED"	bind="FrameChange"/>
-		<Event name="ON_PLAYER_SPRINT"			bind="SprintChange"/>
+
 		<Event name="ON_SQUAD_JOIN"				bind="JoinSquad"/>
 		<Event name="ON_SQUAD_LEAVE"			bind="LeaveSquad"/>
 		<Event name="ON_SQUAD_ROSTER_UPDATE"	bind="UpdateSquad"/>
